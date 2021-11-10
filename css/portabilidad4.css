@@ -981,7 +981,42 @@ img.radio-button {
         width: 520px;
     }
     
-    
+    .simcard-form 
+    {
+        width: 958px;
+    }
+
+    .simcard-first-section 
+    {
+        width: 55%;
+    }
+
+    .simcard-second-section 
+    {
+        width: 45%;
+    }
+
+    .simcard-form-line-effect 
+    {
+        width: 100% !important;
+    }
+
+    .simcard-form-check-container 
+    {
+        width: 100% !important;
+    }
+
+    .simcard-form-check-direction
+    {
+        width: 200px;
+    }
+
+    .simcard-form-line-effect
+    {
+        border-right: 1px solid #d3d4d3 !important;
+        border-bottom: 0 !important;
+        width: 300px;
+    }
 }
 
 /* /Sim Card Section */
