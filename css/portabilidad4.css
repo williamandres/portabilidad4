@@ -936,7 +936,7 @@ img.radio-button {
 
 .simcard-form-date
 {
-    width: 340px !important;
+    width: 320px !important;
 }
 
 .simcard-alert-text 
@@ -948,6 +948,7 @@ img.radio-button {
 .simcard-button
 {
     border-radius: 37px;
+    
 }
 
 .simcard-button-active 
@@ -966,6 +967,11 @@ img.radio-button {
     .simcard-option 
     {
         font-size: .9rem ;
+    }
+
+    .simcard-form-date
+    {
+        width: 340px !important;
     }
 }
 
