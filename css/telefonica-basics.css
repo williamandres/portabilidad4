@@ -1,0 +1,1181 @@
+/* Color palette */
+:root {
+    --movistar-blue: #00a9e0;
+    --movistar-blueDark: #0098d2;
+    --movistar-blueLight-70: #4cc2e9;
+    --movistar-blueLight-50: #7fd4ef;
+    --movistar-blueLight-20: #b2e5f5;
+    --movistar-green: #5bc500;
+    --movistar-greenDark: #499e00;
+    --movistar-greenLight-40: #ade27f;
+    --movistar-greenLight-20: #cdedb2;
+    --pepper: #ff374a;
+    --pepper-dark: #d73241;
+    --pepper-light: #ff6173;
+    --purple: #954b97;
+    --pink: #e9426d;
+    --orange: #ec6839;
+    --egg: #f59c00;
+    --egg-light: #fce1b2;
+    --movistar-cool-grey: #2a2a3c;
+    --black: #000000;
+    --movistar-gunmetal: #63666d;
+    --grey-0: #3a3a3a;
+    --grey-1: #666666;
+    --grey-2: #757575;
+    --grey-3: #dddddd;
+    --grey-4: #eeeeee;
+    --grey-5: #f6f6f6;
+    --grey-shadow:#b6b7b7;
+    --white: #ffffff;
+  }
+  
+  /* Fonts */
+  @font-face {
+    font-family: "Telefonica";
+    src: url("fonts/TelefonicaWeb-Bold.eot");
+    src: local("TelefonicaWeb Bold"), local("TelefonicaWeb-Bold"),
+      url("../font/TelefonicaWeb-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../font/TelefonicaWeb-Bold.woff") format("woff"),
+      url("../font/TelefonicaWeb-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Telefonica";
+    src: url("fonts/TelefonicaWeb-Regular.eot");
+    src: local("TelefonicaWeb-Regular"),
+      url("../font/TelefonicaWeb-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../font/TelefonicaWeb-Regular.woff") format("woff"),
+      url("../font/TelefonicaWeb-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Telefonica";
+    src: url("fonts/TelefonicaWeb-Light.eot");
+    src: local("TelefonicaWeb-Light"),
+      url("../font/TelefonicaWeb-Light.eot?#iefix") format("embedded-opentype"),
+      url("../font/TelefonicaWeb-Light.woff") format("woff"),
+      url("../font/TelefonicaWeb-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Telefonica";
+    src: url("fonts/TelefonicaWeb-ExtraLight.eot");
+    src: local("TelefonicaWeb-ExtraLight"),
+      url("../font/TelefonicaWeb-ExtraLight.eot?#iefix") format("embedded-opentype"),
+      url("../font/TelefonicaWeb-ExtraLight.woff") format("woff"),
+      url("../font/TelefonicaWeb-ExtraLight.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  html{
+    overflow: inherit;
+  }
+  
+  body {
+    font-family: "Telefonica" !important;
+    font-style: normal;
+    margin: 0;
+    font-size: inherit;
+    overflow: inherit;
+  }
+  
+  div{
+    font-family: "Telefonica" !important;
+    font-style: normal;
+    margin: 0;
+    font-size: inherit;
+  }
+  
+  .telefonica h1 {
+    font-family: "Telefonica" !important;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica h2 {
+    font-family: "Telefonica" !important;
+    font-size: 1.63em;
+    font-weight: 300;
+    margin: 0.7em 0;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica h3 {
+    font-family: "Telefonica" !important;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0.7em 0;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica h4 {
+    font-family: "Telefonica" !important;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0.7em 0;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica h5 {
+    font-family: "Telefonica" !important;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica p {
+    font-family: "Telefonica" !important;
+    color: #50535a;
+    line-height: 1.3em;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica label {
+    font-family: "Telefonica" !important;
+  }
+  
+  .telefonica .label-newUI {
+    color: #0b2739;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .telefonica a {
+    font-family: "Telefonica" !important;
+    color: #50535a;
+    color: var(--movistar-gunmetal);
+    text-decoration: underline;
+  }
+  
+  .telefonica a:hover {
+    color: #50535a;
+    color: var(--movistar-gunmetal);
+    text-decoration: underline;
+  }
+  
+  .telefonica a.go-back {
+    color: #00a9e0;
+    text-decoration: none;
+  }
+  
+  .telefonica a.deleteUnderline{
+    text-decoration: none;
+  }
+  
+  .telefonica a.go-back .icon-ic_chevron_left_48px{
+    transform: translateY(10%);
+  }
+  
+  .telefonica span {
+    font-family: "Telefonica" !important;
+    line-height: 1em;
+    color: #50535a;
+    color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica ul li {
+    font-family: "Telefonica" !important;
+    color: #50535a;
+    color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica table {
+    font-family: "Telefonica" !important;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  
+  .telefonica table tr{
+    font-family: "Telefonica" !important;
+  }
+  
+  .telefonica table td{
+    font-family: "Telefonica" !important;
+  }
+  
+  .telefonica table th{
+    font-family: "Telefonica" !important;
+  }
+  
+  .telefonica .table th, .telefonica .table td {
+    vertical-align: middle;
+  }
+  
+  .telefonica .vertical-center {
+    display: flex; display: -webkit-flex;
+    align-items: center;
+  }
+  
+  .telefonica .italic {
+    font-style: italic;
+  }
+  
+  .telefonica th {
+    font-weight: 400;
+  }
+  
+  .telefonica .bold {
+    font-weight: 600;
+  }
+  
+  .telefonica .icon{
+    vertical-align: text-bottom;
+    cursor: inherit;
+    line-height: unset!important;
+  }
+  .telefonica .icon-middle{
+    vertical-align: middle;
+    cursor: inherit;
+    line-height: normal!important;
+  }
+  
+  .telefonica .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .telefonica .modal{
+    background-color: rgba(0, 0, 0, 0.295);
+  }
+  
+  .telefonica .modal .modal-dialog{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .telefonica .modal-content{
+    border: none;
+  }
+  
+  .telefonica .modal-footer{
+    border-top: none;
+  }
+  
+  .telefonica .modal-body img{
+    max-width: 100%;
+  }
+  
+  .telefonica .modal-footer .one-btn{
+    width: 80%;
+  }
+  
+  .telefonica .accordion{
+    border: none;
+  }
+  
+  /* BACKGROUND AND TEXT COLOR */
+  
+  .telefonica .text-blue {
+    color: #019bf2;
+  }
+  .telefonica .text-blueDark {
+    color: #0098d2;
+  }
+  .telefonica .text-blueLight-70 {
+    color: #4cc2e9;
+  }
+  .telefonica .text-blueLight-50 {
+    color: #7fd4ef;
+  }
+  .telefonica .text-blueLight-20 {
+    color: #b2e5f5;
+  }
+  .telefonica .text-green {
+    color: #5bc500;
+  }
+  .telefonica .text-greenDark {
+    color: #499e00;
+  }
+  .telefonica .text-greenLight-40 {
+    color: #ade27f;
+  }
+  .telefonica .text-greenLight-20 {
+    color: #cdedb2;
+  }
+  .telefonica .text-pepper {
+    color: #ff374a;
+  }
+  .telefonica .text-pepperDark {
+    color: #d73241;
+  }
+  .telefonica .text-pepperLight {
+    color: #ff6173;
+  }
+  .telefonica .text-purple {
+    color: #954b97;
+  }
+  .telefonica .text-pink {
+    color: #e9426d;
+  }
+  .telefonica .text-orange {
+    color: #ec6839;
+  }
+  .telefonica .text-egg {
+    color: #f59c00;
+  }
+  .telefonica .text-eggLight {
+    color: #fce1b2;
+  }
+  .telefonica .text-black {
+    color: #000000;
+  }
+  .telefonica .text-cool-grey {
+    color: #2a2a3c;
+  }
+  .telefonica .text-gunmetal {
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  .telefonica .text-grey-0 {
+    color: #3a3a3a;
+  }
+  .telefonica .text-grey-a{
+    color: #86888c;
+  }
+  .telefonica .text-grey-a:hover{
+    color: #0299d8;
+  }
+  .telefonica .text-grey-1 {
+    color: #666666;
+  }
+  .telefonica .text-grey-2 {
+    color: #757575;
+  }
+  .telefonica .text-grey-3 {
+    color: #dddddd;
+  }
+  .telefonica .text-grey-4 {
+    color: #eeeeee;
+  }
+  .telefonica .text-grey-5 {
+    color: #f6f6f6;
+  }
+  .telefonica .text-white {
+    color: #ffffff;
+  }
+  .telefonica .text-grey-shadow {
+    color: #b6b7b7;
+  }
+  .telefonica .text-newtitle {
+    color: #0b2739;
+  }
+  .telefonica .text-error {
+    color: #e4377f;
+  }
+  
+  
+  
+  
+  /* Color BG */
+  .telefonica .bg-blue {
+    background-color: #019bf2;
+  }
+  .telefonica .bg-blueDark {
+    background-color: #0098d2;
+  }
+  .telefonica .bg-blueLight-70 {
+    background-color: #4cc2e9;
+  }
+  .telefonica .bg-blueLight-50 {
+    background-color: #7fd4ef;
+  }
+  .telefonica .bg-blueLight-20 {
+    background-color: #b2e5f5;
+  }
+  .telefonica .bg-green {
+    background-color: #5bc500;
+  }
+  .telefonica .bg-greenDark {
+    background-color: #499e00;
+  }
+  .telefonica .bg-greenLight-40 {
+    background-color: #ade27f;
+  }
+  .telefonica .bg-greenLight-20 {
+    background-color: #cdedb2;
+  }
+  .telefonica .bg-greenLight-10 {
+    background-color: #eef9e5;
+  }
+  .telefonica .bg-pepper {
+    background-color: #ff374a;
+  }
+  .telefonica .bg-pepperDark {
+    background-color: #d73241;
+  }
+  .telefonica .bg-pepperLight {
+    background-color: #ff6173;
+  }
+  .telefonica .bg-purple {
+    background-color: #954b97;
+  }
+  .telefonica .bg-pink {
+    background-color: #e9426d;
+  }
+  .telefonica .bg-orange {
+    background-color: #ec6839;
+  }
+  .telefonica .bg-egg {
+    background-color: #f59c00;
+  }
+  .telefonica .bg-eggLight {
+    background-color: #fce1b2;
+  }
+  .telefonica .bg-black {
+    background-color:#0b2739;
+  }
+  .telefonica .bg-cool-grey {
+    background-color: #2a2a3c;
+  }
+  .telefonica .bg-gunmetal {
+    background-color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  .telefonica .bg-grey-0 {
+    background-color: #3a3a3a;
+  }
+  .telefonica .bg-grey-1 {
+    background-color: #666666;
+  }
+  .telefonica .bg-grey-2 {
+    background-color: #757575;
+  }
+  .telefonica .bg-grey-3 {
+    background-color: #dddddd;
+  }
+  .telefonica .bg-grey-4 {
+    background-color: #eeeeee;
+  }
+  .telefonica .bg-grey-5 {
+    background-color: #f6f6f6;
+  }
+  .telefonica .bg-grey-shadow {
+    background-color: #b6b7b7;
+  }
+  .telefonica .bg-grey-summary {
+    background-color: #f5f5f5;
+  }
+  .telefonica .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .telefonica .bg-form {
+    background-color: #e9eae8;
+  }
+  /* FIN BACKGROUND AND TEXT COLOR */
+  
+  /* BOTONES */
+  
+  .telefonica .btn {
+    border-radius: 4px;
+    text-decoration: none;
+    text-transform: none;
+    padding: 0.6em 0.5em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    border: none;
+    margin: 0.5em;
+    letter-spacing: 0.03em;
+    min-width: 9.5em;
+    cursor: pointer;
+  }
+  .telefonica .btn-rounded {
+    border-radius: 50px;
+  }
+  .telefonica .btn-circle {
+    text-decoration: none;
+    text-transform: none;
+    padding: 0.4em 1.1em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    border: none;
+    border-radius: 20px;
+    margin: 0.2em;
+    letter-spacing: 0.03em;
+    background-color: #00a9e0;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .telefonica .btn-circle:hover{
+    background-color: #068ab6;
+  }
+  
+  .telefonica .btn-circlecs:hover{
+    background-color: #068ab6;
+  }
+  
+  .telefonica .btn-circle:focus{
+    outline: none;
+  }
+  .telefonica .btn-circlecs:focus{
+    outline: none;
+  }
+  
+  .telefonica .btn-circle.active {
+    background-color: #068ab6;
+  }
+  .telefonica .btn-circlecs.active {
+    background-color: #068ab6;
+  }
+  
+  .telefonica .btn i.icon{
+    font-size: 1em;
+    margin-top: -8px;
+    margin-right: 0.2em;
+    height: 1em;
+  }
+  
+  .telefonica .btn-circle i.icon{
+    font-size: 1.4em;
+    margin-right: 0.2em;
+  }
+  
+  .telefonica .btn-circlecs i.icon{
+    font-size: 1.4em;
+    margin-right: 0.2em;
+  }
+  
+  .telefonica .btn:focus {
+    box-shadow: none;
+  }
+  
+  .telefonica .btn:focus:active {
+    box-shadow: none !important;
+  }
+  
+  .telefonica .btn-primary {
+    background-color: #5bc500;
+    color: #ffffff;
+  }
+  .telefonica .btn-primary:hover,
+  .telefonica .btn-primary:active {
+    background-color: #499e00 !important;
+    color: #ffffff !important;
+  }
+  
+  .telefonica .btn-primary.disabled {
+    background-color: #5bc500;
+    color: #ffffff;
+    filter: opacity(50%);
+  }
+  
+  .telefonica .btn-primary-alt {
+    background-color: #019bf2;
+    color: #ffffff;
+  }
+  
+  .telefonica .btn-primary-alt:hover,
+  .telefonica .btn-primary-alt:active {
+    background-color: #058fbd !important;
+    color: #ffffff !important;
+  }
+  
+  
+  .telefonica .btn-primary-alt.disabled {
+    background-color: #019bf2;
+    color: #ffffff;
+    filter: opacity(50%);
+  }
+  
+  .telefonica .btn-primary-alt-inv {
+    border: 1px solid #00a9e0;
+    background-color: #ffffff;
+    color: #00a9e0;
+  }
+  
+  .telefonica .btn-primary-alt-inv:hover,
+  .telefonica .btn-primary-alt-inv:active {
+    background-color: #d1e8f0 !important;
+    color: #00a9e0 !important;
+  }
+  
+  
+  .telefonica .btn-primary-alt-inv.disabled {
+    border: 1px solid #00a9e0;
+    background-color: #ffffff;
+    color: #00a9e0;
+    filter: opacity(50%);
+  }
+  
+  .telefonica .btn-primary-alt-2 {
+    background-color: #ffffff;
+    color: #5bc500;
+    border: 1px solid #5bc500;
+  }
+  
+  .telefonica .btn-primary-alt-2:hover,
+  .telefonica .btn-primary-alt-2:active {
+    background-color: #eaf1e2 !important;
+  }
+  
+  .telefonica .btn-primary-alt-2.disabled {
+    background-color: #ffffff;
+    color: #5bc500;
+    filter: opacity(50%);
+  }
+  
+  .telefonica .btn-secondary {
+    background-color: #eeeeee;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  .telefonica .btn-secondary:hover,
+  .telefonica .btn-secondary:active {
+    background-color: #dddddd !important;
+    color: #63666d !important;
+  }
+  .telefonica .btn-secondary.disabled {
+    background-color: #eeeeee;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+    filter: opacity(50%);
+  }
+  .telefonica .btn-secondaryLight {
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  }
+  .telefonica .btn-secondaryLight:hover,
+  .telefonica .btn-secondaryLight:active {
+    
+  }
+  .telefonica .btn-secondaryLight.disabled {
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+    filter: opacity(50%);
+  }
+  .telefonica .btn-add {
+    border: 1px solid #63666d;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+    background-color: #ffffff;
+  }
+  
+  .telefonica .btn-danger {
+    background-color: #ff374a;
+    color: #ffffff;
+  }
+  .telefonica .btn-danger:hover,
+  .telefonica .btn-danger:active {
+    background-color: #d73241 !important;
+    color: #ffffff !important;
+  }
+  
+  .telefonica .btn-danger.disabled {
+    background-color: #ff6173;
+    color: #ffffff;
+    filter: opacity(50%);
+  }
+  
+  .telefonica .btn-danger-inv {
+    border: 1px solid #ff374a;
+    background-color: #ffffff;
+    color: #ff374a;
+  }
+  .telefonica .btn-danger-inv:hover,
+  .telefonica .btn-danger-inv:active {
+    background-color: #f5dfe0 !important;
+    color: #ff374a !important;
+  }
+  
+  .telefonica .btn-danger-inv.disabled {
+    border: 1px solid #ff374a;
+    background-color: #ffffff;
+    color: #ff374a;
+    filter: opacity(50%);
+  }
+  .telefonica .btn-disabled {
+    background-color: #dddddd;
+    color: #c5c5c5;
+  }
+  .telefonica .btn-disabled:hover,
+  .telefonica .btn-disabled:active {
+    background-color: #f5dfe0 !important;
+    color: #c5c5c5 !important;
+  }
+  
+  .telefonica .btn-disabled-inv {
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    color: #dddddd;
+  }
+  .telefonica .btn-disabled-inv:hover,
+  .telefonica .btn-disabled-inv:active {
+    background-color: #f3f3f3 !important;
+    color: #dddddd !important;
+  }
+  
+  
+  
+  .telefonica .nav-pills .nav-link.active, .telefonica .nav-pills .show > .nav-link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+  }
+  .telefonica .btn.full {
+    width: 100%;
+    margin: 0.4em 0;
+  }
+  
+  .telefonica .btn.normal {
+    white-space: normal;
+  }
+  
+  @media (max-width: 767px){
+    .telefonica .btn.full-mobile {
+      width: 100%;
+      margin: 0.4em 0;
+    }
+  }
+  
+  /* FIN BOTONES */
+  
+  /* INPUTS */
+  
+  .telefonica .form-group {
+    margin-bottom: 0.6em;
+    position: relative;
+  }
+  
+  .telefonica table .form-group {
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .telefonica label {
+    margin-bottom: 0.1rem;
+    color: #757575;
+    font-size: .9em;
+  }
+  
+  .telefonica .custom-control-label {
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+  
+  
+  .telefonica label.label-title {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  /* Dropdown Browsers FIX*/
+  
+  .telefonica select.form-control::-ms-expand {
+      display: none;
+  }
+  .telefonica .hiddenElement{
+    display: none;
+  }
+  
+  
+  /* Dropdown bowsers FIX - END */
+  .telefonica .form-control.newUI {
+    border-top: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    border-color: black;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+  
+  .telefonica .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+    background-color: #e9eae8;
+    border-color: transparent;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .telefonica select.form-control:not([size]):not([multiple]) {
+    height: 3.2em;
+  }
+  
+  .telefonica .form-control.with-icon{
+    padding-left: 2.5em;
+  }
+  
+  .telefonica .form-group span.icon{
+    position: absolute;
+    left: .9em;
+    top: 2em;
+    height: 1.6em;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    font-size: 1em;
+  }
+  
+  .telefonica .form-group span.icon.no-label{
+    top: .9em;
+  }
+  
+  .telefonica .form-group span.icon i{
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+    cursor: text !important;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #aaa !important;
+    }
+  
+  input::-moz-placeholder {
+    color: #aaa !important;
+    }
+  
+  input:-moz-placeholder { /* Older versions of Firefox */
+    color: #aaa !important;
+    }
+  
+  input:-ms-input-placeholder {
+    color: #aaa !important;
+    }
+  
+  .telefonica .form-control:focus {
+    color: #86888c;
+    border-color: #00a9e0;
+  }
+  
+  .telefonica .form-group .form-control:focus + span.icon i{
+    color: #00a9e0;
+  }
+  
+  .telefonica .form-group.invalid .form-control{
+    color: #e4377f;
+    border-color: #e4377f;
+    background-color: transparent;
+  }
+  .telefonica .label-form-date
+  {
+      border-radius: 0.25rem 0.25rem 0 0;
+      border: 1px solid transparent;
+      border-color: transparent;  
+  }
+  .telefonica .date-form-group .form-control
+  {
+      border-radius: 0 0 0.25rem 0.25rem ;
+  }
+  .telefonica .form-group small.feedback-invalid{
+    display: none;
+  }
+  
+  .telefonica .form-group.invalid small.feedback-invalid{
+    display: block;
+  }
+  
+  .telefonica .form-group.invalid span.icon i{
+    color: #e4377f;
+  }
+  
+  .telefonica .form-control:disabled, .telefonica .form-control[readonly] {
+    filter: opacity(50%);
+  }
+  
+  .telefonica .form-control:disabled + span.icon , .telefonica .form-control[readonly] + span.icon {
+    filter: opacity(50%);
+  }
+  
+  .telefonica .custom-select.is-invalid, .telefonica .form-control.is-invalid, .telefonica .was-validated .custom-select:invalid, .telefonica .was-validated .form-control:invalid{
+    border-color: #e4377f;
+    background-color: white;
+    color: #e4377f;
+  }
+  
+  .custom-select.is-invalid + span.icon i , .form-control.is-invalid + span.icon i , .was-validated .custom-select:invalid + span.icon i , .was-validated .form-control:invalid + span.icon i {
+    color: #e4377f;
+  }
+  
+  .telefonica .was-validated .form-control:invalid:focus, .telefonica .form-control.is-invalid:focus, .telefonica .was-validated .custom-select:invalid:focus, .telefonica .custom-select.is-invalid:focus {
+    border-color: #e4377f;
+    box-shadow: none;
+    color: #50535a;
+      color: var(--movistar-gunmetal);
+  
+  }
+  
+  .telefonica .was-validated .form-control:invalid:focus + span.icon i, .telefonica .form-control.is-invalid:focus + span.icon i, .telefonica .was-validated .custom-select:invalid:focus + span.icon i, .telefonica .custom-select.is-invalid:focus + span.icon i{
+    color: #e4377f;
+  }
+  
+  .telefonica .custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: #00a9e0;
+    border: 1px solid #00a9e0;
+  
+  }
+  
+  .telefonica .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    background-color: #00a9e0;
+    border: 1px solid #00a9e0;
+  
+  }
+  
+  .telefonica .custom-control-label::before {
+    background-color: transparent;
+    border: 1px solid #b6b7b7;
+  }
+  
+  .telefonica .custom-control.custom-checkbox .custom-control-label{
+    line-height: 1.7em;
+    font-style: normal;
+  }
+  
+  .telefonica .payment-header-check .custom-control-label::after {
+    position: absolute;
+    top: 2em;
+    left: 0.2em;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  
+  .telefonica .payment-header-check .custom-control-label::before {
+    position: absolute;
+    border-radius: 0.15rem;
+    top: 2em;
+    left: 0.2em;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #dee2e6;
+  }
+  
+  .telefonica .custom-checkbox .custom-control-label::before {
+    border-radius: 50%;
+  }
+  
+  .telefonica .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #00a9e0;
+      color: var(--movistar-gunmetal);
+  }
+  
+  @media (min-width: 768px) {
+    .telefonica .payment-header-check .custom-control-label::after {
+      position: absolute;
+      top: 1.5em;
+      left: 1.5em;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  
+    .telefonica .payment-header-check .custom-control-label::before {
+      position: absolute;
+      top: 1.5em;
+      left: 1.5em;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      pointer-events: none;
+      content: "";
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: #dee2e6;
+    }
+    
+  }
+  
+  /* FIN INPUTS */
+  
+  /*  External class*/
+  
+  .telefonica .center-element{
+    margin: 0 auto !important;
+  }
+  .telefonica .hundred-percent{
+    width: 100% !important;
+  }
+  
+  .telefonica .strong{
+    font-weight: 600;
+  }
+  
+  .telefonica .c-pointer{
+    cursor: pointer;
+  }
+  
+  .telefonica .word-break{
+    word-break: break-word;
+  }
+  
+  .telefonica .fit-content{
+    width: fit-content!important;
+  }
+  
+  /* End External class */
+  
+  .telefonica .accordion .card {
+    border: none;
+  }
+  
+  .telefonica .accordion .card-body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+  }
+  
+  .telefonica .accordion h5 {
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .telefonica .accordion .card-header h5 i.icon::before {
+    content: "\e241";
+  }
+  
+  .telefonica .accordion .card-header h5.collapsed i.icon::before {
+    content: "\e238";
+  }
+  
+  .telefonica .modal.modal-bg-light {
+    background-color: rgba(244, 244, 243, 0.882);
+  }
+  
+  @media (max-width: 767px) {
+    .d-none-mobile {
+      display: none!important;
+    }
+    .telefonica label.label-title {
+      font-size: .8em;
+    }
+    .telefonica .btn-primary {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .d-none-desk {
+      display: none!important;
+    }
+  }
+  
+  
+  /* steps modal 3 steps */
+  .telefonica ul.step-by-step {
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .telefonica ul.step-by-step li.step{
+    z-index: 1;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+  
+  .telefonica ul.step-by-step li.step1, 
+  .telefonica ul.step-by-step li.step2, 
+  .telefonica ul.step-by-step li.step3{
+    color: #ffffff;
+    color: var(--white);
+  }
+  
+  .telefonica ul.step-by-step li.past-step{
+    color: #dddddd;
+    color: var(--grey-3);
+  }
+  
+  .telefonica ul.step-by-step li.current-step {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    height: 1.5em;
+    background-color: #00a9e0;
+    border-radius: 25px;
+  }
+  
+  .telefonica ul.step-by-step li.current-step1 {
+    width: calc(100%/3);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .telefonica ul.step-by-step li.current-step2 {
+    width: calc(2*100%/3);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .telefonica ul.step-by-step li.current-step3 {
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .telefonica .content-step-modal,
+  .telefonica .modal-footer-step {
+    display: none;
+  }
+  /*FMC MODALS*/
+  .fmcbutton-color{
+    background-color: #019df4;
+    color: #ffffff !important;
+  }
+  .fmctext-white{
+    text-decoration: none !important;
+    color: #ffffff !important;
+  }
+  /* END steps modal 3 steps */
+  
+  .telefonica .btn-circlecs {
+    text-decoration: none;
+    text-transform: none;
+    padding: 0.4em 1.1em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    border: none;
+    margin: 0.2em;
+    letter-spacing: 0.03em;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .telefonica .btn-circlecs:hover{
+    background-color: #ffffff;
+  }
+  
+  .telefonica .btn-circlecs:focus{
+    outline: none;
+  }
+  
+  .telefonica .btn-circlecs.active {
+    background-color: #ffffff;
+  }
+  
+  .telefonica .btn-circlecs i.icon{
+    font-size: 1.4em;
+    margin-right: 0.2em;
+  }
