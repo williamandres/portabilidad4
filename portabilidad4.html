@@ -56,7 +56,7 @@
                 <h1 class="plan-body-title container text-center plan-body-title-bold mt-5 mb-2.5"> ¿Cómo quieres recibir tu SIM Card? </h1>
 
                 <section class="simcard">
-                    <div class="container text-center d-flex justify-content-between simcard-option-container">
+                    <div class="container text-center d-flex justify-content-between pl-0 pr-4 simcard-option-container">
                         <button type="button" class="btn col-6  mr-2 ml-0 pl-2 pr-2 simcard-option simcard-option-transparent" id="simcard-option1">
                             <img src="images/icon-car.svg" class="pr-1" alt="" id="simcard-option1-icon-line-blue"> 
                             <img src="images/icon-car-line-white.svg" class="pr-1 display-none" alt="" id="simcard-option1-icon-line-white">
@@ -69,41 +69,43 @@
                     </div>
                 </section>
 
-                <form action="" class="mt-5 d-lg-flex mx-auto simcard-form ">
+                <form action="" class="mt-5 d-flex flex-column  flex-xl-row  mx-auto simcard-form ">
 
                     <div class="simcard-first-section">
-                        <h2 class="text-center text-lg-left mb-4 pl-lg-4 simcard-form-title  ">
-                            ¿Quieres recibir tu SIM en la dirección de facturación?
-                        </h2>
-                        
-                        <div class="mx-auto pb-5 pl-lg-4 mb-4  simcard-form-line-effect">
-                            <div class="mx-auto d-lg-flex align-items-lg-start  simcard-form-check-container">
-                                <div class="form-check  d-lg-flex flex-lg-column simcard-form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                    
-                                    <label class="mb-2  form-check-label simcard-form-label" for="exampleRadios1">
-                                        Sí, enviar a esta dirección
-                                    </label>
-    
-                                    <span class=" simcard-form-check-direction">
-                                        Cundinamarca - Bogotá D.C 
-                                        Carrera 57  # 134 A - 85 
-                                    </span>
-                                </div>
-    
-                                <div class="mt-2 pl-lg-4 form-check mt-lg-0">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                    
-                                    <label class=" form-check-label simcard-form-label" for="exampleRadios2">
-                                        No, recibir en otra dirección
-                                    </label>
+                        <div class="simcard-form-line-effect-right">
+                            <h2 class="text-center text-xl-left  mb-4 pl-lg-4 mx-auto simcard-form-title  ">
+                                ¿Quieres recibir tu SIM en la dirección de facturación?
+                            </h2>
+                            
+                            <div class="mx-auto pb-5 pl-lg-4 mb-4  simcard-form-line-effect">
+                                <div class="mx-auto d-xl-flex simcard-form-check-container">
+                                    <div class="form-check  d-lg-flex flex-lg-column simcard-form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        
+                                        <label class="mb-2  form-check-label simcard-form-label" for="exampleRadios1">
+                                            Sí, enviar a esta dirección
+                                        </label>
+        
+                                        <span class=" simcard-form-check-direction">
+                                            Cundinamarca - Bogotá D.C 
+                                            Carrera 57  # 134 A - 85 
+                                        </span>
+                                    </div>
+        
+                                    <div class="mt-2 mt-xl-0 pl-lg-4 form-check ">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        
+                                        <label class=" form-check-label simcard-form-label" for="exampleRadios2">
+                                            No, recibir en otra dirección
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="simcard-second-section pl-lg-5">
-                        <h2 class="text-center simcard-form-title mb-4">
+                        <h2 class="text-center simcard-form-title mb-4 mx-auto">
                             ¿Cuándo deseas recibir tu SIM card?
                         </h2>
     
@@ -111,12 +113,15 @@
                             <p class=" mb-0 simcard-form-date-text">Fecha de entrega</p>
     
                             <div class="form-group date-form-group">
+                                
                                 <input type="date" class="form-control with-icon newUI" name="expedition_date"
                                     id="expedition_date"  placeholder="Fecha de expedición" max="2099-09-29">
                                 <span class="icon no-label">
                                     <i class="icon icon-calendar-multiselect"></i>
                                 </span>
                             </div>
+
+                            
                         </div>
     
                         <div class="mt-3  container d-flex align-items-center simcard-alert">
@@ -127,10 +132,12 @@
                                 actual quedará suspendido.
                             </p>
                         </div>
-    
-                        <button type="submit" class="btn container col-12 mt-5 mb-5 mx-auto simcard-button simcard-button-active">
-                            Continuar
-                        </button>
+
+                        <div class="mx-auto d-flex justify-content-center simcard-button-container">
+                            <button type="submit" class="btn col-12 mt-5 mb-5  simcard-button simcard-button-active">
+                                Continuar
+                            </button>
+                        </div>    
                     </div>
                 </form>
 
