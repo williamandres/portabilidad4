@@ -980,6 +980,7 @@ input[type="radio"]:checked + label{
 {
     border-radius: 37px;
     width: 290px !important;
+    font-family: TelefonicaRegular;
 }
 
 .simcard-button-active 
@@ -1143,6 +1144,7 @@ input[type="radio"]:checked + label{
     {
         border-radius: 37px;
         width: 320px !important;
+        
     }
 
     .simcard-form2 
