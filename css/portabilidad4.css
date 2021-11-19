@@ -871,18 +871,26 @@ img.radio-button {
 }
 
 
-/* Sim Card Section */
+/* ***********************************Sim Card Section*********************************************** */
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+input[type="radio"]:checked + label{
+    color: #019df4 !important;
+}
 
 .display-none
 {
     display: none;
-
 }
 
 .simcard-option-container 
 {
     /* width: 374px; */
-    width: 340px
+    width: 320px
 }
 
 .simcard-option
@@ -892,6 +900,7 @@ img.radio-button {
     border-radius: 27.7px;
     font-family: TelefonicaRegular !important;
     font-size: .7rem;
+    width: 48%;
     /* margin-bottom: 331px; */
 }
 
@@ -908,7 +917,7 @@ img.radio-button {
     color: white !important;
 }
 
-.simcard-form-title 
+.simcard-form-title, .simcard-form2-checkbox1-title, .simcard-form2-checkbox2-title 
 {
     font-size: 1.1rem !important;
     font-family: TelefonicaRegular !important;
@@ -980,10 +989,126 @@ img.radio-button {
     color: #50535a;
 }
 
+.simcard-form2 
+{
+    font-size: 1rem !important;
+    width: 320px !important;
+}
+
+.simcard-form2-information 
+{
+    width: 100% !important;
+}
+
+.simcard-form2-direction-container 
+{
+    width: 60% !important;
+    border-right: 1px solid #d3d4d3 !important;
+    
+}
+
+.simcard-form2-date-container 
+{
+    width: 40% !important;
+    padding-left: 10px;
+}
+
+.simcard-form2-direction-text, .simcard-form2-date-text 
+{
+    font-size: .8rem !important;
+    font-family: TelefonicaRegular !important;
+    color: #50535a !important;
+    width: 180px !important;
+}
+
+.simcard-form2-direction-title, .simcard-form2-date-title  
+{
+    font-size: 1rem !important;
+    font-family: TelefonicaRegular !important;
+    color: #0b2739 !important;
+}
+
+.simcard-form2-modify p
+{
+    font-size: .7rem !important;
+    color: #019df4 !important;
+}
+
+.simcard-form2-modify img 
+{
+    width: 10px;
+}
+
+.simcard-form2-line 
+{
+    width: 300px !important;
+    background-color: #d3d4d3 !important;
+}
+
+.simcard-form2-info
+{
+    width: 266px;
+}
+
+.simcard-form2-info-input 
+{
+    border: none;
+    font-family: TelefonicaRegular;
+    color: #0b2739;
+    background-color: transparent !important;
+    font-size: .8rem !important;
+    outline: none !important;
+}
+
+.simcard-form2-info-inactive
+{
+    border-bottom: 1px solid #979797;
+} 
+
+.simcard-form2-info-active
+{
+    border-bottom: 1px solid #019df4;
+} 
+
+.simcard-form2-info-error
+{
+    border-bottom: 1px solid #e63780;
+} 
+
+.simcard-form2-info-img
+{
+    width: 14px;
+}
+
+.simcard-form2-info-img2
+{
+    width: 18px;
+}
+
+.simcard-form2-message-error 
+{
+    color: #e63780;
+    font-size: .8rem !important;
+    width: 250px;
+    margin-top: 40px;
+}
+
+.simcard-form2-alert-message 
+{
+    font-size: .6rem !important;
+}
+
+.simcard-form2-button 
+{
+    width: 100%;
+    border-radius: 37px;
+}
+
 @media screen and (min-width: 400px) {
     .simcard-option 
     {
-        font-size: .9rem ;
+        
+        font-size: .9rem !important;
     }
 
     .simcard-form-date
@@ -995,7 +1120,7 @@ img.radio-button {
 @media screen and (min-width: 414px) {
     .simcard-option-container 
     {
-        width: 374px;
+        width: 360px;
     }
 
 
@@ -1014,12 +1139,53 @@ img.radio-button {
         border-radius: 37px;
         width: 320px !important;
     }
+
+    .simcard-form2 
+    {
+        width: 360px !important;
+    }
+
+    .simcard-form2-date-container 
+    {
+        padding-left: 18px;
+    }
+    
+
+    .simcard-form2-direction-title, .simcard-form2-date-title 
+    {
+        font-size: 1.1rem !important;
+    }
+
+    .simcard-form2-direction-text, .simcard-form2-date-text 
+    {
+        font-size: 1rem !important;
+        width: 190px !important;
+    }
+
+    
+
+    .simcard-form2-modify p 
+    {
+        font-size: .9rem !important;
+    }
+
+    .simcard-form2-modify img 
+    {
+        width: 14px;
+    }
+
+    .simcard-form2-alert-message 
+    {
+        font-size: .7rem !important;
+        width: 360px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
     .simcard-option-container
     {
-        width: 520px;
+        width: 480px;
     }
     
     .simcard-form 
@@ -1069,9 +1235,72 @@ img.radio-button {
         border-right: 1px solid #d3d4d3 !important;
     }
 
+    .simcard-form2 
+    {
+        width: 480px !important; 
+        position: relative !important;
+        margin-bottom: 100px !important;
+    }
+
+    .simcard-form2-direction-container, .simcard-form2-date-container  
+    {
+        width: 50% !important;
+    }
+
+    .simcard-form2-direction-title, .simcard-form2-date-title 
+    {
+        font-size: 1.2rem !important;
+    }
+
+    .simcard-form2-direction-text, .simcard-form2-date-text 
+    {
+        font-size: 1rem !important;
+    }
+
+    .simcard-form2-direction-text 
+    {
+        width: 188px;
+    }
+
+    .simcard-form2-modify 
+    {
+        position: absolute !important;
+        top: 0;
+        padding-top: 70px;
+    }
+    
+    .simcard-form2-line 
+    {
+        width: 800px !important;
+        position: absolute;
+        right: -200px;
+        z-index: 80;
+    }
+
+    .simcard-form2-checkbox1-title 
+    {
+        margin-top: 35px;
+    }
+
+    .simcard-form2-info-container 
+    {
+        width: 630px;
+        position: absolute;
+        right: -100px;
+    }
+
+    .simcard-form2-button 
+    {
+        width: 360px;
+    }
+
+    .simcard-form2-message-error 
+    {
+        margin-top: 100px;
+    }
 }
 
-/* /Sim Card Section */
+/* ******************* /Sim Card Section ***************************** */
 
 
 

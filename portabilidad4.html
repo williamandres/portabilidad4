@@ -56,92 +56,174 @@
                 <h1 class="plan-body-title container text-center plan-body-title-bold mt-5 mb-2.5"> ¿Cómo quieres recibir tu SIM Card? </h1>
 
                 <section class="simcard">
-                    <div class="container text-center d-flex justify-content-between pl-0 pr-4 simcard-option-container">
-                        <button type="button" class="btn col-6  mr-2 ml-0 pl-2 pr-2 simcard-option simcard-option-transparent" id="simcard-option1">
+                    <div class="container text-center d-flex justify-content-between pl-0 pr-0 simcard-option-container">
+                        <button type="button" class="btn   mr-2 ml-0 pl-2 pr-2 simcard-option simcard-option-transparent" id="simcard-option1">
                             <img src="images/icon-car.svg" class="pr-1" alt="" id="simcard-option1-icon-line-blue"> 
                             <img src="images/icon-car-line-white.svg" class="pr-1 display-none" alt="" id="simcard-option1-icon-line-white">
                             Recibir a domicilio
                         </button>
-                        <button type="button" class="btn  col-6  mr-0 ml-0 pl-2 pr-2 simcard-option simcard-option-transparent" id="simcard-option2">
+                        <button type="button" class="btn   mr-0 ml-0 pl-2 pr-2 simcard-option simcard-option-transparent" id="simcard-option2">
                             <img src="images/icon-shop.svg" class="pr-1" alt="" id="simcard-option2-icon-line-blue">
                             <img src="images/icon-shop-line-white.svg" class="pr-1 display-none" alt="" id="simcard-option2-icon-line-white"> Retirar en tienda
                         </button>
                     </div>
                 </section>
 
-                <form action="" class="mt-5 d-flex flex-column  flex-xl-row  mx-auto simcard-form ">
-
-                    <div class="simcard-first-section">
-                        <div class="simcard-form-line-effect-right">
-                            <h2 class="text-center text-xl-left  mb-4 pl-lg-4 mx-auto simcard-form-title  ">
-                                ¿Quieres recibir tu SIM en la dirección de facturación?
-                            </h2>
-                            
-                            <div class="mx-auto pb-5 pl-lg-4 mb-4  simcard-form-line-effect">
-                                <div class="mx-auto d-xl-flex simcard-form-check-container">
-                                    <div class="form-check  d-lg-flex flex-lg-column simcard-form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        
-                                        <label class="mb-2  form-check-label simcard-form-label" for="exampleRadios1">
-                                            Sí, enviar a esta dirección
-                                        </label>
-        
-                                        <span class=" simcard-form-check-direction">
-                                            Cundinamarca - Bogotá D.C 
-                                            Carrera 57  # 134 A - 85 
-                                        </span>
-                                    </div>
-        
-                                    <div class="mt-2 mt-xl-0 pl-lg-4 form-check ">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        
-                                        <label class=" form-check-label simcard-form-label" for="exampleRadios2">
-                                            No, recibir en otra dirección
-                                        </label>
+                <div class="simcard-form-container display-none" id="simcard-form">
+                    <form  class=" mt-5 d-flex flex-column  flex-xl-row  mx-auto simcard-form" id="form1">
+    
+                        <div class="simcard-first-section">
+                            <div class="simcard-form-line-effect-right">
+                                <h2 class="text-center text-xl-left  mb-4 pl-lg-4 mx-auto simcard-form-title  ">
+                                    ¿Quieres recibir tu SIM en la dirección de facturación?
+                                </h2>
+                                
+                                <div class="mx-auto pb-5 pl-lg-4 mb-4  simcard-form-line-effect">
+                                    <div class="mx-auto d-xl-flex simcard-form-check-container">
+                                        <div class="form-check  d-lg-flex flex-lg-column simcard-form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            
+                                            <label class="mb-2  form-check-label simcard-form-label" for="exampleRadios1">
+                                                Sí, enviar a esta dirección
+                                            </label>
+            
+                                            <span class=" simcard-form-check-direction">
+                                                Cundinamarca - Bogotá D.C 
+                                                Carrera 57  # 134 A - 85 
+                                            </span>
+                                        </div>
+            
+                                        <div class="mt-2 mt-xl-0 pl-lg-4 form-check ">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            
+                                            <label class=" form-check-label simcard-form-label" for="exampleRadios2">
+                                                No, recibir en otra dirección
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="simcard-second-section pl-lg-5">
-                        <h2 class="text-center simcard-form-title mb-4 mx-auto">
-                            ¿Cuándo deseas recibir tu SIM card?
-                        </h2>
     
-                        <div class=" mx-auto d-flex justify-content-between align-items-center simcard-form-date ">
-                            <p class=" mb-0 simcard-form-date-text">Fecha de entrega</p>
+                        <div class="simcard-second-section pl-lg-5">
+                            <h2 class="text-center simcard-form-title mb-4 mx-auto">
+                                ¿Cuándo deseas recibir tu SIM card?
+                            </h2>
+        
+                            <div class=" mx-auto d-flex justify-content-between align-items-center simcard-form-date ">
+                                <p class=" mb-0 simcard-form-date-text">Fecha de entrega</p>
+        
+                                <div class="form-group date-form-group">
+                                    <img src="" alt="">
+                                    <input type="date" class="form-control with-icon newUI" name="expedition_date"
+                                        id="expedition_date"  placeholder="Fecha de expedición" max="2099-09-29">
+                                    <span class="icon no-label">
+                                        <i class="icon icon-calendar-multiselect"></i>
+                                    </span>
+                                </div>
     
-                            <div class="form-group date-form-group">
                                 
-                                <input type="date" class="form-control with-icon newUI" name="expedition_date"
-                                    id="expedition_date"  placeholder="Fecha de expedición" max="2099-09-29">
-                                <span class="icon no-label">
-                                    <i class="icon icon-calendar-multiselect"></i>
-                                </span>
+                            </div>
+        
+                            <div class="mt-3  container d-flex align-items-center simcard-alert">
+                                <img src="images/icon_alert.svg" alt="" class="simcard-alert-icon mr-2">
+                                <p class=" mb-0 simcard-alert-text">
+                                    A partir del 03/09/2021 se activará automáticamente el servicio Movistar si la 
+                                    portabilidad es aprobada por tu operadora actual, así el servicio con tu operador
+                                    actual quedará suspendido.
+                                </p>
+                            </div>
+    
+                            <div class="mx-auto d-flex justify-content-center simcard-button-container" id="simcard-button">
+                                <button type="submit"  class="btn col-12 mt-5 mb-5  simcard-button simcard-button-active">
+                                    Continuar
+                                </button>
+                            </div>    
+                        </div>
+                    </form>  
+                </div>
+
+                <form action="" class="display-none container px-0 mt-4 simcard-form2" id="simcard-form2">
+
+                    <section class="d-flex simcard-form2-information">
+                        <div class=" simcard-form2-direction-container">
+                            <h2 class="simcard-form2-direction-title">Se enviará a esta dirección</h2>
+                            <p class="mb-0 pb-xl-3 simcard-form2-direction-text">Cundinamarca - Bogotá D.C 
+                                Carrera 57  # 134 A - 85 </p>
+                        </div>
+    
+                        <div class=" simcard-form2-date-container ">
+                            <h2 class="simcard-form2-date-title">Fecha de entrega</h2>
+                            <p class="mb-0 simcard-form2-date-text">21/04/2000</p>
+                        </div>
+                    </section>
+
+                    <div class=" d-flex px-xl-0 mb-3 justify-content-end align-items-center container simcard-form2-modify"> <p class="pr-2 mb-0 pt-1">Modificar</p>  <a href=""> <img src="images/icon_pencil.svg" class="" alt=""> </a> </div>
+
+                    <hr class="mx-auto mb-0 text-center simcard-form2-line">
+
+                    <div class="mt-3  simcard-form2-checkbox1">
+                        <h3 class="mb-3 container px-0 text-center simcard-form2-checkbox1-title">¿Autorizas la entrega a un tercero?</h3>
+
+                        <div class="text-center simcard-form2-checkbox1-container">
+                            <div class="mr-5 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Sí</label>
                             </div>
 
-                            
+                            <div class="ml-5 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 simcard-form2-checkbox2">
+                        <h3 class="mb-3 mt-4 container px-0 text-center simcard-form2-checkbox2-title">¿A quién debemos entregar?</h3>
+
+                        <div class=" text-center simcard-form2-checkbox2-container">
+                            <div class="mr-4 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">A un autorizado</label>
+                            </div>
+
+                            <div class="ml-5 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">En portería</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-auto text-center d-xl-flex   simcard-form2-info-container">
+                        <div class="mx-auto mb-4 mb-xl-0 d-flex align-items-center form-group simcard-form2-info simcard-form2-info-error">
+                            <img class="pb-2 ml-1 simcard-form2-info-img" src="images/input_usuario.svg" alt="">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="pb-3 pl-1 form-control simcard-form2-info-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre completo del autorizado">
                         </div>
     
-                        <div class="mt-3  container d-flex align-items-center simcard-alert">
-                            <img src="images/icon_alert.svg" alt="" class="simcard-alert-icon mr-2">
-                            <p class=" mb-0 simcard-alert-text">
-                                A partir del 03/09/2021 se activará automáticamente el servicio Movistar si la 
-                                portabilidad es aprobada por tu operadora actual, así el servicio con tu operador
-                                actual quedará suspendido.
-                            </p>
+                        <div class="mx-auto mb-xl-0 d-flex align-items-center form-group simcard-form2-info simcard-form2-info-inactive">
+                            <img class="pb-1 ml-1 simcard-form2-info-img simcard-form2-info-img2" src="images/input_acreditacion.svg" alt="">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="pb-3 pl-1 form-control simcard-form2-info-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Número de identificación del autorizado">
                         </div>
-
-                        <div class="mx-auto d-flex justify-content-center simcard-button-container">
-                            <button type="submit" class="btn col-12 mt-5 mb-5  simcard-button simcard-button-active">
-                                Continuar
-                            </button>
-                        </div>    
                     </div>
+
+                    <p class="mb-4 mx-auto text-center simcard-form2-message-error">
+                        Parece que te faltó completar algún campo. Verifica los datos para poder continuar
+                    </p>
+
+                    <div class="d-flex justify-content-center align-items-center simcard-form2-alert">
+                        <img src="images/icon_alert.svg" alt="" class="mr-2 simcard-form2-alert-image">
+                        <p class="mb-0 simcard-form2-alert-message">
+                            Recuerda que la única persona autorizada para recibir o recoger el pedido es el 
+                            registrado en esta página y debe ser mayor de edad. Tu pedido será entregado 
+                            en la dirección registrada.
+                        </p>
+                    </div>
+
+                    <button class="mx-auto d-flex justify-content-center mt-5 mb-5 btn  simcard-form2-button simcard-button-active"> Continuar </button>
                 </form>
 
-                
 
                 
 
@@ -154,7 +236,18 @@
     
             </div>
         </section>
-        <script src="portabilidad4.js"></script>    
+        <script src="portabilidad4.js"></script> 
+
+        <script>
+            const $form = document.querySelector('#form1');
+            $form.addEventListener('submit', handlesubmit);
+
+            function handlesubmit(event){
+                event.preventDefault()
+
+                
+            }
+        </script>   
 </body>
 </html> 
 
