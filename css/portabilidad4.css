@@ -960,26 +960,47 @@ input[type="radio"]:checked + label{
     width: 320px !important;
 }
 
+.simcard-input-container 
+{
+    position: relative !important;
+}
+
+.simcard-input-date-img1 
+{
+    position: absolute;
+    left: -22px;
+    bottom: 7px;
+}
+
+.simcard-input-date-arrow 
+{
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    z-index: -10;
+}
+
 .simcard-alert 
 {
-    width: 320px;
+    width: 100%;
+    
 }
 
 .simcard-alert-text 
 {
-    font-size: .8rem;
+    font-size: .6rem;
     color: #50535a !important;
 }
 
 .simcard-button-container 
 {
-    width: 290px;
+    width: 100%;
 }
 
 .simcard-button
 {
     border-radius: 37px;
-    width: 290px !important;
+    width: 100% ;
     font-family: TelefonicaRegular;
 }
 
@@ -1134,16 +1155,21 @@ input[type="radio"]:checked + label{
     {
         width: 362px;
     }
+
+    .simcard-alert-text 
+    {
+        font-size: .7rem;
+    }
     
     .simcard-button-container 
     {
-        width: 330px;
+        width: 360px;
     }
 
     .simcard-button
     {
         border-radius: 37px;
-        width: 320px !important;
+        width: 360px !important;
         
     }
 
