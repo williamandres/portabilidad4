@@ -7,10 +7,12 @@ let option1IconLineWhite = document.getElementById('simcard-option1-icon-line-wh
 let option2IconLineBlue = document.getElementById('simcard-option2-icon-line-blue');
 let option2IconLineWhite = document.getElementById('simcard-option2-icon-line-white');
 
-let simCardForm = document.getElementById('simcard-form')
-let simCardForm2 = document.getElementById('simcard-form2')
+let simCardForm = document.getElementById('simcard-form');
+let simCardForm2 = document.getElementById('simcard-form2');
 
-let simCardbutton = document.getElementById('simcard-button')
+let simCardbutton = document.getElementById('simcard-button');
+
+let simCardOptionContainer = document.getElementById('simcard-option-container')
 
 // *************************** Sim Card Option 1 ******************************
 
@@ -23,6 +25,7 @@ function reciveDelivery()
     simCardOption2.classList.remove('simcard-option-blue');
     simCardOption2.classList.add('simcard-option-transparent');
     
+    
     option1IconLineBlue.classList.add('display-none');
     option1IconLineWhite.classList.remove('display-none');
     option2IconLineWhite.classList.add('display-none');
@@ -31,6 +34,7 @@ function reciveDelivery()
     simCardForm.classList.remove('display-none');
     simCardForm2.classList.add('display-none');
 
+    simCardOptionContainer.classList.remove('simcard-option-margin-bottom')
 }
 
 // *************************** /Sim Card Option 1 ******************************
