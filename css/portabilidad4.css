@@ -882,6 +882,7 @@ input[type="radio"]:checked + label{
     color: #019df4 !important;
 }
 
+
 .display-none
 {
     display: none;
@@ -1131,6 +1132,83 @@ input[type="radio"]:checked + label{
     border-radius: 37px;
 }
 
+.simcard-form3 
+{
+    margin-top: 40px;
+}
+
+.simcard-form3-title 
+{
+    font-size: 1.1rem !important;
+    font-family: TelefonicaRegular;
+}
+
+.simcard-form3 select , .simcard-form3 input
+{
+    border: none;
+    font-size: .8rem !important;
+    font-family: TelefonicaRegular;
+    color: #86888c !important;
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.simcard-form3-icons 
+{
+    width: 20px !important;
+}
+
+.simcard-form3-select-container 
+{
+    border-bottom: 1px solid #86888c !important;
+    border-radius: none !important;
+}
+
+.simcard-form3-select-container47 
+{
+    width: 47%;
+}
+
+.simcard-form3-select-container100 
+{
+    width: 100%;
+}
+
+
+.simcard-form3-select-input::placeholder 
+{
+    color: #2d2d2e !important;
+    font-size: .7rem;
+}
+
+.simcard-form3-options 
+{
+    width: 100%;
+}
+
+.simcard-simcard-form3-date-input-inactive
+{
+    border-bottom: 1px solid #86888c;
+}
+
+.simcard-form3-message-error 
+{
+    font-size: .8rem; 
+    color: #e63780;
+}
+
+.simcard-form3-line 
+{
+    width: 300px !important;
+    background-color: #d3d4d3 !important;
+}
+
+.simcard-form3-alert-message 
+{
+    font-size: .6rem;
+    color: #50535a !important;
+}
+
 @media screen and (min-width: 400px) {
     .simcard-option 
     {
@@ -1212,7 +1290,17 @@ input[type="radio"]:checked + label{
         font-size: .7rem !important;
         width: 360px;
     }
+
+    .simcard-form3 
+    {
+        width: 360px;
+    }
+
     
+    .simcard-form3-alert-message 
+    {
+        font-size: .7rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1336,6 +1424,60 @@ input[type="radio"]:checked + label{
     {
         margin-top: 100px;
     }
+
+    
+
+    .simcard-form3 
+    {
+        width: 920px;
+    }
+
+    .simcard-form3-options-container 
+    {
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    .simcard-form2-message-error-container
+    {
+        width: 100%;
+    }
+
+    .simcard-form3-select1 
+    {
+        width: 100%;
+    }
+
+    .simcard-form3-second-part 
+    {
+        position: relative !important;
+    }
+
+    .simcard-form3-line-right 
+    {
+        border-right: 1px solid #d3d4d3 !important;
+        height: 200px !important;
+        position: absolute !important; 
+        top: 0;
+        left: -50px;
+    } 
+
+    .simcard-form3-line 
+    {
+        display: none;
+    }
+
+    .simcard-form3-select-container100 
+    {
+        width: 47%;
+    }
+
+    .simcard-form3-select-container47-desk 
+    {
+        width: 47%;
+    }
+
+    
 }
 
 /* ******************* /Sim Card Section ***************************** */

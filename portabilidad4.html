@@ -70,6 +70,10 @@
                     </div>
                 </section>
 
+
+
+                <!-- ********************second screen**************************** -->
+
                 <div class="simcard-form-container display-none" id="simcard-form">
                     <form  class=" mt-5 d-flex flex-column  flex-xl-row  mx-auto simcard-form" id="form1">
     
@@ -145,6 +149,13 @@
                     </form>  
                 </div>
 
+                <!-- ********************/second screen**************************** -->
+
+
+
+
+                <!-- ********************third screen**************************** -->
+
                 <form action="" class="display-none container px-0 mt-4 simcard-form2" id="simcard-form2">
 
                     <section class="d-flex simcard-form2-information">
@@ -210,9 +221,11 @@
                         </div>
                     </div>
 
-                    <p class="mb-4 mx-auto text-center simcard-form2-message-error">
-                        Parece que te faltó completar algún campo. Verifica los datos para poder continuar
-                    </p>
+                    <div class=" simcard-form2-message-error-container">
+                        <p class="mx-auto text-center simcard-form2-message-error">
+                            Parece que te faltó completar algún campo. Verifica los datos para poder continuar
+                        </p>
+                    </div>
 
                     <div class="d-flex justify-content-center align-items-center simcard-form2-alert">
                         <img src="images/icon_alert.svg" alt="" class="mr-2 simcard-form2-alert-image">
@@ -223,11 +236,169 @@
                         </p>
                     </div>
 
-                    <button class="mx-auto d-flex justify-content-center mt-5 mb-5 btn  simcard-form2-button simcard-button-active"> Continuar </button>
+                    <button class="mx-auto d-flex justify-content-center mt-5 mb-5 btn  simcard-form2-button simcard-button-active" id="simcard-button2"> Continuar </button>
                 </form>
 
+                <!-- ********************/third screen**************************** -->
 
-                
+
+
+                <!-- ********************fourth screen**************************** -->
+
+                <div class="display-none" id="simcard-form3">
+                    <form action="" class="mx-auto mb-xl-0 d-xl-flex justify-content-center simcard-form3">
+    
+                        <div class="pr-xl-5 d-flex flex-wrap  justify-content-between simcard-form3-first-part">
+    
+                            <h2 class="text-center mx-auto mb-4 simcard-form3-title"> ¿Quieres recibir tu SIM en la dirección de facturación? </h2>
+        
+                            <div class="d-flex mb-3 simcard-form3-options ">
+                                <div class="mx-auto  d-xl-flex flex-xl-row justify-content-xl-between simcard-form3-options-container">
+                                    <div class="mb-3 ">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        
+                                        <label class=" " for="exampleRadios1">
+                                            Sí, enviar a esta dirección
+                                        </label>
+                                    </div>
+            
+                                    <div class="">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        
+                                        <label class=" form-check-label " for="exampleRadios2">
+                                            No, recibir en otra dirección
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="simcard-form3-select1">
+                                <div class="mb-2 d-flex align-items-center simcard-form3-select-container47-desk simcard-form3-select-container ">
+                                    <div class="simcard-form3-icons">
+                                        <img src="images/icon-map.svg" alt="">
+                                    </div>
+                                    <select class="mb-0 form-control simcard-form3-select" id="">
+                                        <option>Departamento</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div> 
+                            </div>
+        
+                            <div class="mb-2 d-flex align-items-center simcard-form3-select-container simcard-form3-select-container47 simcard-form3-select2">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-localization.svg" alt="">
+                                </div>
+                                <select class=" mb-0 form-control" id="">
+                                    <option>Ciudad</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            
+                            <div class="d-flex align-items-center mb-2 px-0 simcard-form3-select-container100 simcard-form3-select-container">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-home.svg" alt="">
+                                </div>
+                                <select class="mb-0 form-control" id="">
+                                    <option>Barrio/vereda</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+        
+                            <div class="d-flex align-items-center px-0 simcard-form3-select-container simcard-form3-select-container47">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-localization-map.svg" alt="">
+                                </div>
+                                <select class="mb-0 form-control" id="">
+                                    <option>Dirección</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+        
+                            <div class="d-flex align-items-center  simcard-form3-select-container simcard-form3-select-container47">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-localization-plus.svg" alt="">
+                                </div>
+                                <input type="text" class="pl-3 simcard-form3-select-input" placeholder="000 # 00-00 ">
+                            </div>
+        
+                            <div class="d-flex align-items-center px-0 simcard-form3-select-container simcard-form3-select-container47">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-home.svg" alt="">
+                                </div>
+                                <select class="mb-0 form-control" id="">
+                                    <option>Tipo de vivienda</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+        
+                            <div class="d-flex align-items-center simcard-form3-select-container simcard-form3-select-container47">
+                                <div class="simcard-form3-icons">
+                                    <img src="images/icon-localization-building.svg" alt="">
+                                </div>
+                                <input type="text" class="pl-3 simcard-form3-select-input" placeholder="Conjunto - Torre - Apto">
+                            </div> 
+        
+                            <p class="text-center mx-auto mt-3 mb-xl-5 simcard-form3-message-error">
+                                Parece que te faltó completar algún campo. <br>
+                                Verifica los datos para poder continuar 
+                            </p>
+                            
+                            <hr class="mt-0 mb-0 mx-auto simcard-form3-line">
+                        </div>
+    
+                        <div class="ml-xl-5 simcard-form3-second-part">
+        
+                            <h2 class="text-center mx-auto mt-4 mt-xl-0 mb-4 simcard-form3-title"> ¿Cuándo deseas recibir tu SIM card? </h2>
+        
+                            <div class=" mx-auto d-flex justify-content-between align-items-center simcard-form-date simcard-simcard-form3-date">
+                                <p class=" mb-0 simcard-form-date-text">Fecha de entrega</p>
+        
+                                <div class="d-flex align-items-center form-group date-form-group simcard-input-container simcard-simcard-form3-date-input-inactive">
+                                    <img src="images/icon-calendar.svg" class="pl-4 simcard-input-date-img1" alt="">
+                                    <input type="date" class="form-control with-icon newUI" name="expedition_date"
+                                        id="expedition_date"  placeholder="Fecha de expedición" max="2099-09-29">
+                                    <span class="icon no-label">
+                                        <i class="icon icon-calendar-multiselect"></i>
+                                    </span>
+                                    <img src="images/arrow-down.svg" alt="" class="simcard-input-date-arrow">
+                                </div>
+                                
+                            </div>
+        
+                            <div class="d-flex mt-3 align-items-center simcard-form3-alert">
+                                <img  class="mr-2 simcard-form3-alert-img" src="images/icon_alert.svg" alt="" >
+        
+                                <p class="mb-0 simcard-form3-alert-message">
+                                    A partir del 03/09/2021 se activará automáticamente el servicio Movistar si
+                                    la portabilidad es aprobada por tu operadoractual, 
+                                    así el servicio con tu operador actual quedará suspendido.
+                                </p>
+                            </div>
+                            
+                            <button class="mx-auto d-flex justify-content-center mt-5 mb-5 btn  simcard-button simcard-button-active"> Continuar </button>
+                            
+                            <div class="simcard-form3-line-right"></div>
+                        </div>
+                    </form>
+                </div>   
+
+
+                <!-- ********************/fourth screen**************************** -->
 
                 <div class="sitio-seguro">
                     <div class="sitio-seguro-icon">
@@ -242,13 +413,25 @@
 
         <script>
             const $form = document.querySelector('#form1');
+            const $form2 = document.querySelector('#simcard-form2');
+
             $form.addEventListener('submit', handlesubmit);
 
             function handlesubmit(event){
-                event.preventDefault()
+                event.preventDefault();
 
                 
             }
+
+            /* ***************** */
+
+            $form2.addEventListener('submit', handlesubmit2);
+
+            function handlesubmit2(event){
+                event.preventDefault();
+            }
+
+
         </script>   
 </body>
 </html> 
