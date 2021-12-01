@@ -10,6 +10,8 @@ let option2IconLineWhite = document.getElementById('simcard-option2-icon-line-wh
 let simCardForm = document.getElementById('simcard-form');
 let simCardForm2 = document.getElementById('simcard-form2');
 let simCardForm3 = document.getElementById('simcard-form3');
+let simCardForm4 = document.getElementById('simcard-form4');
+
 
 let simCardbutton = document.getElementById('simcard-button');
 let simCardbutton2 = document.getElementById('simcard-button2');
@@ -35,6 +37,8 @@ function reciveDelivery()
     
     simCardForm.classList.remove('display-none');
     simCardForm2.classList.add('display-none');
+    simCardForm3.classList.add('display-none');
+    simCardForm4.classList.add('display-none');
 
     simCardOptionContainer.classList.remove('simcard-option-margin-bottom')
 }
@@ -59,6 +63,17 @@ function getShop()
     option2IconLineBlue.classList.add('display-none');  
     option1IconLineBlue.classList.remove('display-none');
     option1IconLineWhite.classList.add('display-none');
+
+    simCardForm.classList.remove('display-none');
+    simCardForm2.classList.add('display-none');
+    simCardForm3.classList.add('display-none'); 
+
+    simCardForm4.classList.remove('display-none');
+    simCardForm.classList.add('display-none');
+    simCardForm2.classList.add('display-none');
+    simCardForm3.classList.add('display-none');
+
+    simCardOptionContainer.classList.remove('simcard-option-margin-bottom')
 }
 
 // *************************** /Sim Card Option 2 ******************************
@@ -76,6 +91,7 @@ function screen2()
     simCardForm2.classList.remove('display-none');
     simCardForm.classList.add('display-none');
     simCardForm3.classList.add('display-none');
+    simCardForm4.classList.add('display-none');
 }
 
 // *************************** /Sim Card Option 1/ screen 2  ******************************
@@ -93,6 +109,7 @@ function screen3()
     simCardForm3.classList.remove('display-none');
     simCardForm2.classList.add('display-none');
     simCardForm.classList.add('display-none');
+    simCardForm4.classList.add('display-none');
 }
 
 
